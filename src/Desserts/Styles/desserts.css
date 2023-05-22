@@ -1,0 +1,53 @@
+.toDo{
+    display: flex;
+}
+
+.toDo_izquierda{
+    position: relative;
+}
+
+.toDo_encabezado{
+    margin-top: 3rem;
+}
+
+.figura{
+    width: 100%;
+    height: 15%;
+}
+
+.elipse{
+    position: absolute;
+    width: 30%;
+    height: 12%;
+    top: 5rem;
+    left: 35%;
+}
+
+.toDo_encabezado span{
+    position: absolute;
+    top: 5.5rem;
+    color: white;
+    left: 38.5%;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.todo_tittle{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.tarta{
+    width: 40%;
+    height: 40%;
+}
+
+.todo_tittle h1{
+    position: absolute;
+    color: white;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    top: 15rem;
+}
