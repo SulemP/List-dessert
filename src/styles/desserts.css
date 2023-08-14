@@ -1,0 +1,129 @@
+.desserts{
+    position: relative;
+}
+
+.dessert_derretido{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: -5rem;
+}
+
+.dessert_octagono{
+    clip-path: ellipse(33% 16% at 50% 50%);
+    width: 35%;
+    height: 280px;
+    background-color:  #C09879;
+    position: absolute;
+    left: 32.5%;
+    top: -6rem;
+}
+
+.dessert_titulo{
+    color: white;
+    position: absolute;
+    top: -.2rem;
+    left: 41%;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+}
+
+.dessert_tartas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+
+.dessert_cuadro_agregar{
+    width: 30%;
+    height: 350px;
+    left: 10%;
+    top: 30%;
+    background-color: #C09879;
+    position: absolute;
+    border-radius: 10%;
+}
+
+.dessert_cuadro_list{
+    width: 30%;
+    height: 350px;
+    right: 10%;
+    top: 35%;
+    background-color: #C09879;
+    position: absolute;
+    border-radius: 10%;
+}
+
+.dessert_form{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.form_dessert{
+    margin-top: 3rem;
+}
+
+.form_input{
+    border-radius: 10px;
+    border-color: var(--lila);
+    padding: 2px 5px 2px 5px;
+    margin-top: 1rem;
+}
+
+.box-canvas{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    z-index: 2;
+    width: 90px;
+    height: 50px;
+}
+
+.wrapper{
+    position: absolute;
+    top: 3rem;
+    background: repeating-linear-gradient(to right, var(--lila), var(--rosaClaro) 7px, var(--lila) 9px);
+    width: 60px;
+    height: 40px;
+    clip-path: polygon(15% 100%, 84% 100%, 100% 0, 0 0);
+}
+    
+    
+.topping{
+    position: absolute;
+    top:1.8rem;
+    left: -.8rem;
+    width: 100px;
+    height: 40px;
+    overflow: hidden;
+}
+    
+    
+.topping::before{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    border-radius: 50% 0 0 50%;
+    background-color: var(--crema);
+    transform: skew(10deg, 5deg);
+    border-bottom: 1px solid var(--rosaMedio);
+}
+    
+    
+.topping::after{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    left: 40px;
+    border-radius: 0 50% 50% 0;
+    background-color: var(--crema);
+    /* background-color: red; */
+    border-bottom: 1px solid var(--rosaMedio);
+    transform: skew(-10deg, -5deg);
+}
+    
