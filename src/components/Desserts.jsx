@@ -30,14 +30,21 @@ export default function Desserts () {
     }
         
     const deleteDessert = (index) => {
-        const newDesserts = [...desserts]
-        newDesserts.splice(index, 1)
-        setDesserts(newDesserts)
+        // const newDesserts = [...desserts]
+        // newDesserts.splice(index, 1)
+        // setDesserts(newDesserts)
+        const newDessertList = desserts.filter((_, i) => i !== index);
+        setDesserts(newDessertList);
+    }
+
+    //Función para convertir la primer letra de cada lista en mayúscula
+    const capitalizeFirstLetter = (str) => {
+        return str.charAt(0).toUpperCase() + str.slice(1)
     }
 
     return (
         <>
-            <div className='dessert'>
+            <div className='col-xl-12 dessert'>
                 <div>
                     <img src={derretido} alt='derretido' className='dessert_derretido'></img>
                 </div>
@@ -60,6 +67,8 @@ export default function Desserts () {
 
                         <p>Tell me which desserts do you prefer</p>
 
+                        {/* <p className="add" onClick={addDessert}>ADD DESSERT</p> */}
+
                         <form className="form_dessert" onSubmit={(e) => { e.preventDefault(); addDessert()}}>
                             <input
                                 className="form_input"
@@ -69,25 +78,31 @@ export default function Desserts () {
                                 placeholder="Enter a new dessert"
                             />
                             <div className="box-canvas" onClick={addDessert}>
+                                <p className="add" onClick={addDessert}>ADD DESSERT</p>
                                 <div className="wrapper"></div>
                                 <div className="topping"></div>
                                 <div className="topping-middle"></div>
                                 <div className="topping-top"></div>
                                 <div className="cherry"></div>
                             </div>
-                            {/*<button className="cookie-button" type="submit">Add Dessert</button>*/}
                         </form>
                     </div>
                 </div>
                     
-                
                 <div className='dessert_cuadro_list'>
-                    <ul>
-                        {
-                            desserts.map((dessert, index) => (
-                                <EditDesserts key={index} dessert={dessert} index={index} editDessert={editDessert} deleteDessert={deleteDessert}/>
-                            ))
-                        }
+                    <ul style={{ maxHeight: '100%', overflowY: 'auto' }}>
+                        {/* overflowY: 'auto': Esto hace que aparezca una barra de desplazamiento vertical (auto) cuando el contenido de la lista excede la altura máxima */}
+                        {desserts.map((dessert, index) => (
+                            <li key={index}>
+                                <EditDesserts
+                                    dessert={capitalizeFirstLetter(dessert)}
+                                    index={index}
+                                    editDessert={editDessert}
+                                    deleteDessert={deleteDessert}
+                                    // desserts={desserts}
+                                />
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

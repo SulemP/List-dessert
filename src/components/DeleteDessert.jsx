@@ -1,12 +1,12 @@
 import React from 'react';
 
 export default function DeleteDessert(props){
-    const { onDelete } = props
+    const { onDelete, index } = props
     const handleDelete = () => {
-        onDelete()
+        onDelete(index)
     }
 
     return (
-        <button onClick={handleDelete}>Delete</button>
+        <button className='button_delete' onClick={handleDelete}>Delete</button>
     )
 }

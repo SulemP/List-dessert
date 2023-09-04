@@ -52,9 +52,25 @@
     height: 350px;
     right: 10%;
     top: 35%;
+    padding: 5px;
     background-color: #C09879;
     position: absolute;
     border-radius: 10%;
+}
+
+.dessert_cuadro_list ul::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+    border-radius: 10px; 
+    height: 30%;
+}
+
+.dessert_cuadro_list ul::-webkit-scrollbar-thumb {
+    background-color: var(--rosaMedio); /* Color del "pulgar" de la barra de desplazamiento */
+    border-radius: 6px; /* Borde redondeado del "pulgar" */
+}
+
+.dessert_cuadro_list ul::-webkit-scrollbar-thumb:hover {
+background-color: var(--lila); /* Cambio de color al pasar el mouse por encima */
 }
 
 .dessert_form{
@@ -62,8 +78,16 @@
     margin-left: 2rem;
 }
 
+.dessert_form h1{
+    color: var(--lila);
+}
+
+.dessert_form p{
+    color: var(--rosaMedio);
+}
+
 .form_dessert{
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .form_input{
@@ -71,15 +95,24 @@
     border-color: var(--lila);
     padding: 2px 5px 2px 5px;
     margin-top: 1rem;
+    color: var(--lila);
+    font-weight: bold;
 }
+
+.form_input:focus{
+    outline: none;
+}
+
+/* CUP CAKE */
 
 .box-canvas{
     position: absolute;
-    left: 65%;
-    top: 50%;
+    left: 72%;
+    top: 55%;
     z-index: 2;
-    width: 90px;
-    height: 50px;
+    width: 70px;
+    height: 90px;
+    cursor: pointer;
 }
 
 .wrapper{
@@ -96,11 +129,10 @@
     position: absolute;
     top:1.8rem;
     left: -.8rem;
-    width: 100px;
+    width: 90px;
     height: 40px;
     overflow: hidden;
 }
-    
     
 .topping::before{
     content: '';
@@ -112,7 +144,6 @@
     transform: skew(10deg, 5deg);
     border-bottom: 1px solid var(--rosaMedio);
 }
-    
     
 .topping::after{
     content: '';
@@ -126,4 +157,211 @@
     border-bottom: 1px solid var(--rosaMedio);
     transform: skew(-10deg, -5deg);
 }
-    
+
+.topping-middle{
+    position: absolute;
+    top: 18px;
+    left: -1px;
+    width: 70px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.topping-middle::before{
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 30px;
+    border-radius: 50% 0 0 50%;
+    background-color: var(--crema);
+    border-bottom: 1px solid var(--rosaMedio);
+    transform: skew(10deg, 5deg);
+}
+
+.topping-middle::after{
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 30px;
+    left: 25px;
+    border-radius: 0 50% 50% 0;
+    background-color: var(--crema);
+    border-bottom: 1px solid var(--rosaMedio);
+    transform: skew(-10deg, -5deg);
+}
+
+.topping-top{
+    position: absolute;
+    top: 8px;
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.topping-top::before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 25px;
+    height: 20px;
+    border-radius: 50% 0 0 50%;
+    background-color: var(--crema);
+    border-bottom: 1px solid var(--rosaMedio);
+    transform: skew(10deg, 5deg);
+}
+
+.topping-top::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 25px;
+    border-radius: 0 50% 50% 0;
+    background-color: var(--crema);
+    border-bottom: 1px solid var(--rosaMedio);
+    transform: skew(-10deg, -5deg);
+}
+
+.cherry{
+    position: absolute;
+    left: 25px;
+    top: -20px;
+    transform: rotate(-10deg);
+    height: 0;
+    width: 0;
+    border-left: 3px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 18px solid var(--vino);
+}
+
+.cherry::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    left: -8px;
+    background: red;
+    width: 10px;
+    height: 15px;
+    border-radius: 50% 30% 0 50%;
+}
+
+.cherry::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    background: red;
+    width: 10px;
+    height: 15px;
+    border-radius: 30% 50% 50% 0;
+}
+
+/* CUP CAKE */
+
+.add{
+    position: absolute;
+    color: black !important;
+    font-weight: bold;
+    font-size: small;
+    z-index: 100;
+    width: 70px;
+    left: -5%;
+    top: 14%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dessert_cuadro_list ul{
+    color: var(--lila);
+    margin-right: 5px;
+}
+
+.list_dessert{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.buttons_edit{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: .2rem;
+}
+
+.input_edit{
+    border-radius: 10px;
+    border-color: var(--lila);
+    padding: 2px 5px 2px 5px;
+    width: 120px;
+    color: var(--lila);
+    font-weight: bold;
+}
+
+.input_edit:focus {
+    outline: none;
+}
+
+.button_edit{
+    width: 45px;
+    border-radius: 8px;
+    background-color: var(--lila);
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: small;
+}
+
+.button_edit:active {
+    transform: translateY(4px);
+}
+
+.button_delete{
+    width: 50px;
+    border-radius: 8px;
+    background-color: var(--rosaMedio);
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+.button_delete:active {
+    transform: translateY(4px);
+}
+
+.button_save{
+    width: 50px;
+    border-radius: 8px;
+    background-color: var(--lila);
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+.button_save:active {
+    transform: translateY(4px);
+}
+
+.button_cancel{
+    width: 50px;
+    border-radius: 8px;
+    background-color: var(--rosaMedio);
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+.button_cancel:active {
+    transform: translateY(4px);
+}
+
+.box-canvas:active{
+    transform: translateY(4px);
+}
+
+.add:active{
+    transform: translateY(4px);
+}
