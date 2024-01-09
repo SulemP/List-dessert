@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import './../styles/desserts.css'
-import derretido from './../asset/derretido.png'
+import derretido from './../asset/derretidoBlue.png'
 import tartas from './../asset/tartasinfondo.png'
 
 import EditDesserts from './EditDesserts'
@@ -78,7 +78,7 @@ export default function Desserts () {
                                 placeholder="Enter a new dessert"
                             />
                             <div className="box-canvas" onClick={addDessert}>
-                                <p className="add" onClick={addDessert}>ADD DESSERT</p>
+                                <span className="add" onClick={addDessert}>ADD DESSERT</span>
                                 <div className="wrapper"></div>
                                 <div className="topping"></div>
                                 <div className="topping-middle"></div>

@@ -76,7 +76,7 @@ export default function EditDesserts(props) {
                     
                 </div>
                 ) : (
-                <div>
+                <div className='button_options'>
                     <button className='button_edit' onClick={handleEdit}>Edit</button>
                     <DeleteDessert onDelete={deleteDessert} index={index}/>
                 </div>

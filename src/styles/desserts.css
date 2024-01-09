@@ -6,14 +6,14 @@
     width: 100%;
     height: 150px;
     position: absolute;
-    top: -5rem;
+    top: -5.2rem;
 }
 
 .dessert_octagono{
     clip-path: ellipse(33% 16% at 50% 50%);
     width: 35%;
     height: 280px;
-    background-color:  #C09879;
+    background-color:  var(--lila);
     position: absolute;
     left: 32.5%;
     top: -6rem;
@@ -42,18 +42,18 @@
     height: 350px;
     left: 10%;
     top: 30%;
-    background-color: #C09879;
+    /* background-color:#C09879; */
     position: absolute;
     border-radius: 10%;
 }
 
 .dessert_cuadro_list{
-    width: 30%;
+    width: 40%;
     height: 350px;
     right: 10%;
-    top: 35%;
+    top: 30%;
     padding: 5px;
-    background-color: #C09879;
+    /* background-color: var(--rosaMedio); */
     position: absolute;
     border-radius: 10%;
 }
@@ -74,29 +74,35 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
 }
 
 .dessert_form{
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-left: 2rem;
 }
 
 .dessert_form h1{
     color: var(--lila);
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 .dessert_form p{
     color: var(--rosaMedio);
+    font-weight: 600;
+    /* margin-top: 3rem; */
 }
 
 .form_dessert{
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 .form_input{
     border-radius: 10px;
-    border-color: var(--lila);
+    /* border-color: var(--lila); */
+    background-color: var(--dark);
     padding: 2px 5px 2px 5px;
     margin-top: 1rem;
     color: var(--lila);
     font-weight: bold;
+    opacity: .8;
 }
 
 .form_input:focus{
@@ -107,8 +113,8 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
 
 .box-canvas{
     position: absolute;
-    left: 72%;
-    top: 55%;
+    left: 80%;
+    top: 53%;
     z-index: 2;
     width: 70px;
     height: 90px;
@@ -140,9 +146,10 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     width: 45px;
     height: 30px;
     border-radius: 50% 0 0 50%;
-    background-color: var(--crema);
     transform: skew(10deg, 5deg);
-    border-bottom: 1px solid var(--rosaMedio);
+    border-bottom: 5px solid var(--rosaMedio);
+    background-color: var(--rosaClaro);
+
 }
     
 .topping::after{
@@ -152,10 +159,11 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     height: 30px;
     left: 40px;
     border-radius: 0 50% 50% 0;
-    background-color: var(--crema);
     /* background-color: red; */
-    border-bottom: 1px solid var(--rosaMedio);
+    border-bottom: 5px solid var(--rosaMedio);
     transform: skew(-10deg, -5deg);
+    background-color: var(--rosaClaro);
+
 }
 
 .topping-middle{
@@ -173,9 +181,9 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     width: 38px;
     height: 30px;
     border-radius: 50% 0 0 50%;
-    background-color: var(--crema);
-    border-bottom: 1px solid var(--rosaMedio);
+    border-bottom: 5px solid var(--rosaMedio);
     transform: skew(10deg, 5deg);
+    background-color: var(--rosaClaro);
 }
 
 .topping-middle::after{
@@ -185,9 +193,9 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     height: 30px;
     left: 25px;
     border-radius: 0 50% 50% 0;
-    background-color: var(--crema);
-    border-bottom: 1px solid var(--rosaMedio);
+    border-bottom: 5px solid var(--rosaMedio);
     transform: skew(-10deg, -5deg);
+    background-color: var(--rosaClaro);
 }
 
 .topping-top{
@@ -205,9 +213,10 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     width: 25px;
     height: 20px;
     border-radius: 50% 0 0 50%;
-    background-color: var(--crema);
-    border-bottom: 1px solid var(--rosaMedio);
+    border-bottom: 5px solid var(--rosaMedio);
     transform: skew(10deg, 5deg);
+    background-color: var(--rosaClaro);
+
 }
 
 .topping-top::after{
@@ -217,9 +226,10 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     height: 20px;
     left: 25px;
     border-radius: 0 50% 50% 0;
-    background-color: var(--crema);
-    border-bottom: 1px solid var(--rosaMedio);
+    border-bottom: 5px solid var(--rosaMedio);
     transform: skew(-10deg, -5deg);
+    background-color: var(--rosaClaro);
+
 }
 
 .cherry{
@@ -264,8 +274,8 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     font-size: small;
     z-index: 100;
     width: 70px;
-    left: -5%;
-    top: 14%;
+    left: -8%;
+    top: 13%;
     text-align: center;
     cursor: pointer;
 }
@@ -273,6 +283,7 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
 .dessert_cuadro_list ul{
     color: var(--lila);
     margin-right: 5px;
+    font-size: 1.5rem;
 }
 
 .list_dessert{
@@ -298,6 +309,10 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
 
 .input_edit:focus {
     outline: none;
+}
+
+.button_options{
+    margin-left: 8%;
 }
 
 .button_edit{
@@ -364,4 +379,30 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
 
 .add:active{
     transform: translateY(4px);
+}
+
+/* Media querys */
+
+@media (min-width: 1200px){
+
+}
+
+/*TELÉFONO CELULAR LG*/
+@media (max-width: 1199px) and (min-width: 992px){
+  
+}
+
+/*TELÉFONO CELULAR MD*/
+@media (max-width: 991px) and (min-width: 768px){
+   
+}
+
+/*TELÉFONO CELULAR SM*/
+@media(max-width: 767px) and (min-width: 576px){
+    
+}
+
+/*TELÉFONO CELULAR XS*/
+@media (max-width: 575px){
+
 }
