@@ -103,6 +103,7 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     color: var(--lila);
     font-weight: bold;
     opacity: .8;
+    width: 70%;
 }
 
 .form_input:focus{
@@ -284,6 +285,7 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     color: var(--lila);
     margin-right: 5px;
     font-size: 1.5rem;
+    list-style-type: none;
 }
 
 .list_dessert{
@@ -302,8 +304,10 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     border-radius: 10px;
     border-color: var(--lila);
     padding: 2px 5px 2px 5px;
-    width: 120px;
+    width: 90%;
+    height: 35px;
     color: var(--lila);
+    font-size: .8rem;
     font-weight: bold;
 }
 

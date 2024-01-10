@@ -94,6 +94,9 @@ export default function Desserts () {
                         {/* overflowY: 'auto': Esto hace que aparezca una barra de desplazamiento vertical (auto) cuando el contenido de la lista excede la altura máxima */}
                         {desserts.map((dessert, index) => (
                             <li key={index}>
+                                {/* 🍰
+                <span>{capitalizeFirstLetter(dessert)}</span> */}
+                                {/* <span style={{ position: 'absolute', left: '-20px' }}>🍰</span> {dessert} */}
                                 <EditDesserts
                                     dessert={capitalizeFirstLetter(dessert)}
                                     index={index}

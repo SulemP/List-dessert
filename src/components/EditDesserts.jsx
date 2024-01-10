@@ -58,16 +58,17 @@ export default function EditDesserts(props) {
         <li className='list_dessert'>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <div style={{ width: '60%' }}>
-                {dessert}
+                🍓 <span>{dessert}</span>
+                {/* {dessert} */}
                 </div>
                 {isEditing ? (
                 <div>
                     <input
-                    className='input_edit'
-                    type="text"
-                    value={editedDessert}
-                    onChange={handleChange}
-                    placeholder="Edit dessert"
+                        className='input_edit'
+                        type="text"
+                        value={editedDessert}
+                        onChange={handleChange}
+                        placeholder="Edit dessert"
                     />
                     <div className='buttons_edit'>
                         <button className='button_save' onClick={handleSave}>Save</button>
