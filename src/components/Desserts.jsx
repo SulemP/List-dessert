@@ -12,6 +12,15 @@ export default function Desserts () {
     const [desserts, setDesserts] = useState([])
     const [newDessert, setNewDessert] = useState('')
 
+    const contenedorEstilos = {
+        backgroundImage: `url(${tartas})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '100%',
+        height: '100vh',
+        zIndex: -1,
+    };
+
     const addDessert = () => {
         if (newDessert.trim() !== '') {
             setDesserts([...desserts, newDessert]);
@@ -44,6 +53,7 @@ export default function Desserts () {
 
     return (
         <>
+            {/* <div className='col-xl-12 dessert' style={contenedorEstilos}> */}
             <div className='col-xl-12 dessert'>
                 <div>
                     <img src={derretido} alt='derretido' className='dessert_derretido'></img>

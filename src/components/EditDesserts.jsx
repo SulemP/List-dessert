@@ -71,8 +71,8 @@ export default function EditDesserts(props) {
                         placeholder="Edit dessert"
                     />
                     <div className='buttons_edit'>
-                        <button className='button_save' onClick={handleSave}>Save</button>
-                        <button className='button_cancel' onClick={handleCancel}>Cancel</button>
+                        <button className='button_save fruit_button' onClick={handleSave}>Save</button>
+                        <button className='button_cancel fruitCancel_button' onClick={handleCancel}>Cancel</button>
                     </div>
                     
                 </div>
@@ -86,3 +86,6 @@ export default function EditDesserts(props) {
         </li>
     )
 }
+
+
+
