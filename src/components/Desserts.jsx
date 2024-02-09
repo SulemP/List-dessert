@@ -54,7 +54,7 @@ export default function Desserts () {
     return (
         <>
             {/* <div className='col-xl-12 dessert' style={contenedorEstilos}> */}
-            <div className='col-xl-12 dessert'>
+            <div className='col-12 dessert'>
                 <div>
                     <img src={derretido} alt='derretido' className='dessert_derretido'></img>
                 </div>
@@ -70,7 +70,7 @@ export default function Desserts () {
                     <img src={tartas} alt='tartas' className='dessert_tartas'></img>
                 </div>
 
-                <div className='dessert_cuadro_agregar'>
+                <div className='col-12 dessert_cuadro_agregar'>
                     <div className="dessert_form">
 
                         <h1>Do you like desserts?</h1>
@@ -79,7 +79,7 @@ export default function Desserts () {
 
                         {/* <p className="add" onClick={addDessert}>ADD DESSERT</p> */}
 
-                        <form className="form_dessert" onSubmit={(e) => { e.preventDefault(); addDessert()}}>
+                        <form className="col-xs-12 form_dessert" onSubmit={(e) => { e.preventDefault(); addDessert()}}>
                             <input
                                 className="form_input"
                                 type="text"

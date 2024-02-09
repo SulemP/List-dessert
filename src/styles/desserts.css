@@ -759,10 +759,167 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
         font-size: .7rem;
         left: -15%;
     }
-
 }
 
 /*TELÉFONO CELULAR XS*/
 @media (max-width: 575px){
+
+    .dessert_derretido{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: -3.5rem;
+    }
+
+    .dessert_octagono{
+        clip-path: ellipse(40% 12% at 50% 50%);
+        width: 50%;
+        height: 230px;
+        left: 25%;
+        top: -6.1rem;
+    }
+
+    .dessert_titulo{
+        left: 37%;
+        font-size: 1.6rem;
+    }
+
+    .dessert_cuadro_agregar{
+        width: 90%;
+        height: 280px;
+        left: 5%;
+        top: 20%;
+    }
+
+    .dessert_form {
+        margin-left:0rem;
+    }
+
+    .dessert_form h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .dessert_form p{
+        width: 65%;
+        font-size: 1rem;
+    }
+
+    .form_input{
+        margin-top: 0rem;
+        font-weight: 500;
+        width: 60%;
+    }
+
+    .dessert_cuadro_list{
+        width: 90%;
+        padding: 2px;
+        margin-left: 5%;
+        height: 280px;
+        top: 40%;
+    }
+
+    .list_dessert{
+        font-size: 1rem;
+    }
+
+    .button_options{
+        display: none;
+    }
+
+    .box-canvas{
+        left: 70%;
+        top: 23%;
+        width: 50px;
+        height: 70px;
+    }
+    
+    .wrapper{
+        top: 3rem;
+        width: 50px;
+        height: 35px;
+    }
+        
+        
+    .topping{
+        top:2.3rem;
+        left: -.9rem;
+        width: 90px;
+        height: 70px;
+    }
+        
+    .topping::before{
+        width: 40px;
+        height: 25px;    
+    }
+        
+    .topping::after{
+        width: 40px;
+        height: 25px;
+        left: 40px;    
+    }
+    
+    .topping-middle{
+        top: 18px;
+        left: -5px;
+        width: 70px;
+        height: 30px;
+    }
+    
+    .topping-middle::before{
+        width: 35px;
+        height: 30px;
+        border-radius: 50% 0 0 50%;
+    }
+    
+    .topping-middle::after{
+        width: 35px;
+        height: 30px;
+        left: 25px;
+    }
+    
+    .topping-top{
+        top: 8px;
+        width: 90px;
+        height: 30px;
+        left: -3px;
+    }
+    
+    .topping-top::before{
+        left: 10px;
+        width: 21px;
+        height: 20px;
+    }
+    
+    .topping-top::after{
+        width: 21px;
+        height: 20px;
+        left: 25px;
+    }
+    
+    .cherry{
+        left: 22px;
+        top: -18px;
+    }
+    
+    .cherry::before{
+        left: -7px;
+        width: 6px;
+        height: 10px;
+    }
+    
+    .cherry::after{
+        top: -2px;
+        left: -2px;
+        background: red;
+        width: 7px;
+        height: 10px;
+    }
+
+    .add{
+        top: 25%;
+        font-size: .7rem;
+        left: -15%;
+    }
 
 }
