@@ -816,7 +816,7 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
         padding: 2px;
         margin-left: 5%;
         height: 280px;
-        top: 40%;
+        top: 43%;
     }
 
     .list_dessert{
@@ -824,7 +824,11 @@ background-color: var(--lila); /* Cambio de color al pasar el mouse por encima *
     }
 
     .button_options{
-        display: none;
+        margin-left: 0;
+    }
+
+    .input_edit{
+        height: 25px;
     }
 
     .box-canvas{
